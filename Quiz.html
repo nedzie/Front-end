@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EQUIPE 6</title>
     <link rel="stylesheet" href="Quiz.css">
     <!-- FontAweome CDN Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     <!-- start Quiz button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="start_btn"><button>Começar Quiz</button></div>
     <!-- Info Box -->
     <div class="info_box">
         <div class="info-title"><span>Algumas regras deste quiz</span></div>
@@ -22,14 +38,17 @@
             <div class="info">5. Você receberá pontos com base em suas respostas corretas.</div>
         </div>
         <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
+            <button class="quit">Desistir</button>
+            <button class="restart">Continuar</button>
         </div>
+    </div>
+    <div class="nome">
+        <p></p>
     </div>
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Matematica</div>
+            <div class="title">Matemática</div>
             <div class="timer">
                 <div class="time_left_txt">Tempo</div>
                 <div class="timer_sec">15</div>
@@ -71,4 +90,5 @@
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="Script.js"></script>
 </body>
+
 </html>
