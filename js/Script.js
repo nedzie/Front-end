@@ -210,3 +210,41 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> de <p>'+ questions.length +'</p> questões</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
+ // Geografia
+
+function onDragStart(event){
+    event.dataTransfer
+         .setData('text/plain',event.target.id);
+}
+
+function onDragOver(event){
+    event.preventDefault();
+}
+
+function onDrop(event){
+    const id = event.dataTransfer
+                    .getData('text');
+
+    const draggableElement = window.document.getElementById(id);
+    const dropZone = event.target;
+
+    console.log(dropZone.id + "<-->" + id); 
+
+    // Talvez substituir por algo mais performático, como arrays...
+
+    if(dropZone.id == id){
+        draggableElement.style.margin = "0";
+        dropZone.appendChild(draggableElement);
+        dropZone.style.backgroundColor = '#96f59eab';
+    } else {
+        alert("Esta capital não pertence a este estado! Tente novamente...");
+    }
+
+    event.dataTransfer
+         .clearData();
+}
+
+function resetar(){
+    document.location.reload(true);
+}

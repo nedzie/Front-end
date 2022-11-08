@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/Script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-box">
+        <!-- Talvez colocar um botão pra voltar... -->
+        <input type="button" value="Resetar" onclick="resetar()" class="btn-reset">
+        <div class="estados" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+            <div id="distrito-federal" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Brasília
+            </div>
+            <div id="espirito-santo" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Vitória
+            </div>
+            <div id="goias" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Goiânia
+            </div>
+            <div id="maranhao" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                São Luiz
+            </div>
+            <div id="mato-grosso" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Cuiabá
+            </div>
+            <div id="mato-grosso-do-sul" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Campo Grande
+            </div>
+            <div id="minas-gerais" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Belo Horizonte
+            </div>
+            <div id="para" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Belém
+            </div>
+            <div id="paraiba" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                João Pessoa
+            </div>
+            <div id="parana" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Curitiba
+            </div>
+
+            <div id="pernambuco" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Recife
+            </div>
+            <div id="piaui" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Teresina
+            </div>
+            <div id="rio-de-janeiro" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Rio de Janeiro
+            </div>
+            <div id="rio-grande-do-norte" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Natal
+            </div>
+            <div id="rio-grande-do-sul" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Porto Alegre
+            </div>
+            <div id="rondonia" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Porto Velho
+            </div>
+            <div id="roraima" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Boa Vista
+            </div>
+            <div id="santa-catarina" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Florianópolis
+            </div>
+            <div id="sao-paulo" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                São Paulo
+            </div>
+            <div id="sergipe" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Aracaju
+            </div>
+            <div id="tocantins" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+                Palmas
+            </div>
+        </div>
+
+        <div class="capitais">
+            <div class="box-capitais">
+                <label for="dropzone">Distrito Federal, Capital: </label>
+                <div class="dropzone" id="distrito-federal" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Espírito Santo, Capital: </label>
+                <div class="dropzone" id="espirito-santo" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Goiás, Capital: </label>
+                <div class="dropzone" id="goias" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Maranhão, Capital: </label>
+                <div class="dropzone" id="maranhao" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Mato Grosso, Capital: </label>
+                <div class="dropzone" id="mato-grosso" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Mato Grosso do Sul, Capital: </label>
+                <div class="dropzone" id="mato-grosso-do-sul" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                </div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Minas Gerais, Capital: </label>
+                <div class="dropzone" id="minas-gerais" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Pará, Capital: </label>
+                <div class="dropzone" id="para" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Paraíba, Capital: </label>
+                <div class="dropzone" id="paraiba" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Paraná, Capital: </label>
+                <div class="dropzone" id="parana" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Pernambuco, Capital: </label>
+                <div class="dropzone" id="pernambuco" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Piauí, Capital: </label>
+                <div class="dropzone" id="piaui" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Rio de Janeiro, Capital: </label>
+                <div class="dropzone" id="rio-de-janeiro" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Rio Grande do Norte, Capital: </label>
+                <div class="dropzone" id="rio-grande-do-norte" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                </div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Rio Grande do Sul, Capital: </label>
+                <div class="dropzone" id="rio-grande-do-sul" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                </div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Rondônia, Capital: </label>
+                <div class="dropzone" id="rondonia" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Roraima, Capital: </label>
+                <div class="dropzone" id="roraima" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Santa Catarina, Capital: </label>
+                <div class="dropzone" id="santa-catarina" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">São Paulo, Capital: </label>
+                <div class="dropzone" id="sao-paulo" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Sergipe, Capital: </label>
+                <div class="dropzone" id="sergipe" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+            <div class="box-capitais">
+                <label for="dropzone">Tocantins, Capital: </label>
+                <div class="dropzone" id="tocantins" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
