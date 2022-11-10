@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-decoration: none;
 }
 body{
     display: flex;
@@ -10,4 +11,14 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #007bff;
+}
+a, a:visited {
+    color: inherit;
+}
+
+.dashboards {
+    margin-top: 5%;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
 }
